@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Reparação de Computadores</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo -->
+    <div class="container">
+
+        <!-- Seção de Boas-Vindas com Slideshow -->
+        <section id="home" class="welcome-section">
+            <h1>Bem-vindo à Loja de Reparação de Computadores</h1>
+            <div class="slideshow-container">
+                <img src="https://via.placeholder.com/800x400?text=Computador+1" alt="Produto 1">
+                <img src="https://via.placeholder.com/800x400?text=Computador+2" alt="Produto 2">
+                <img src="https://via.placeholder.com/800x400?text=Computador+3" alt="Produto 3">
+            </div>
+        </section>
+
+        <!-- Layout Lateral Esquerdo e Área Principal -->
+        <div class="main-content">
+            <aside class="sidebar">
+                <button onclick="showProducts()">1. Produtos</button>
+                <button onclick="showServices()">2. Serviços</button>
+            </aside>
+
+            <main class="main-area">
+                <div id="content"></div>
+            </main>
+        </div>
+
+        <!-- Formulário -->
+        <section class="form-section">
+            <h2>Inscreva-se para Receber Novidades</h2>
+            <form id="subscribe-form">
+                <input type="text" id="name" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <h3>Siga-nos nas Redes Sociais</h3>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="https://via.placeholder.com/50?text=FB" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="https://via.placeholder.com/50?text=TW" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="https://via.placeholder.com/50?text=IG" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="https://via.placeholder.com/50?text=LI" alt="LinkedIn"></a>
+            <a href="https://youtube.com" target="_blank"><img src="https://via.placeholder.com/50?text=YT" alt="YouTube"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
